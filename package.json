@@ -1,0 +1,60 @@
+{
+  "name": "tiktokenizer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.33.2",
+  "scripts": {
+    "dev": "vite",
+    "build": "pnpm tokenizers:verify && pnpm typecheck && vite build",
+    "preview": "vite preview",
+    "start": "vite preview",
+    "lint": "eslint src --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "tokenizers:build": "node scripts/build-tokenizers.mjs",
+    "tokenizers:verify": "node scripts/verify-tokenizers.mjs"
+  },
+  "dependencies": {
+    "@chenglou/pretext": "0.0.9",
+    "@codemirror/commands": "^6",
+    "@codemirror/state": "^6",
+    "@codemirror/view": "^6",
+    "@radix-ui/react-checkbox": "^1.0.3",
+    "@radix-ui/react-popover": "^1.0.5",
+    "@radix-ui/react-select": "^1.2.0",
+    "class-variance-authority": "^0.4.0",
+    "clsx": "^1.2.1",
+    "cmdk": "^0.2.0",
+    "lucide-react": "^0.119.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^1.10.0",
+    "tailwindcss-animate": "^1.0.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/eslint": "^8.21.1",
+    "@types/node": "^24.15.0",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.34.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.8.1",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.0",
+    "tiktoken": "1.0.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.1",
+    "vitest": "5.0.3"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

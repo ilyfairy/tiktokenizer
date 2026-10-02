@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "engine": {
+    "name": "Golia tiktoken",
+    "version": "4.1.2",
+    "wasmBindgen": "0.2.104",
+    "rust": "1.91.0"
+  },
+  "families": {
+    "openai-claude": {
+      "encodings": [
+        "claude_legacy",
+        "cl100k_base",
+        "o200k_base",
+        "o200k_harmony",
+        "p50k_base",
+        "p50k_edit",
+        "r50k_base",
+        "gpt2"
+      ],
+      "loaderUrl": "/tokenizers/openai-claude/openai-claude.js",
+      "wasmUrl": "/tokenizers/openai-claude/openai-claude_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 3030606
+        }
+      }
+    },
+    "deepseek": {
+      "encodings": [
+        "deepseek_v3",
+        "deepseek_v4"
+      ],
+      "loaderUrl": "/tokenizers/deepseek/deepseek.js",
+      "wasmUrl": "/tokenizers/deepseek/deepseek_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 1932902
+        }
+      }
+    },
+    "qwen": {
+      "encodings": [
+        "qwen2"
+      ],
+      "loaderUrl": "/tokenizers/qwen/qwen.js",
+      "wasmUrl": "/tokenizers/qwen/qwen_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 1978048
+        }
+      }
+    },
+    "meta": {
+      "encodings": [
+        "cl100k_base",
+        "llama3"
+      ],
+      "loaderUrl": "/tokenizers/meta/meta.js",
+      "wasmUrl": "/tokenizers/meta/meta_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 1903058
+        }
+      }
+    },
+    "mistral": {
+      "encodings": [
+        "mistral_v3"
+      ],
+      "loaderUrl": "/tokenizers/mistral/mistral.js",
+      "wasmUrl": "/tokenizers/mistral/mistral_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 1939360
+        }
+      }
+    },
+    "moonshot": {
+      "encodings": [
+        "kimi_k2",
+        "kimi_k3"
+      ],
+      "loaderUrl": "/tokenizers/moonshot/moonshot.js",
+      "wasmUrl": "/tokenizers/moonshot/moonshot_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 2075116
+        }
+      }
+    },
+    "zhipu": {
+      "encodings": [
+        "glm4",
+        "glm5"
+      ],
+      "loaderUrl": "/tokenizers/zhipu/zhipu.js",
+      "wasmUrl": "/tokenizers/zhipu/zhipu_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 2002958
+        }
+      }
+    },
+    "minimax": {
+      "encodings": [
+        "minimax_m2"
+      ],
+      "loaderUrl": "/tokenizers/minimax/minimax.js",
+      "wasmUrl": "/tokenizers/minimax/minimax_bg.wasm",
+      "files": {
+        "wasm": {
+          "raw": 2237327
+        }
+      }
+    }
+  }
+}

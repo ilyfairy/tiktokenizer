@@ -1,0 +1,28 @@
+# Dependencies
+/node_modules/
+
+# Vite/build output
+/out/
+/.vite/
+/dist/
+
+# Rust/WASM build output
+/tokenizer-native/target/
+
+# Local tools and reports
+/work/
+/coverage/
+/test-results/
+/playwright-report/
+*.tsbuildinfo
+
+# Local environment and editor files
+.env
+.env.*.local
+.DS_Store
+*.pem
+
+# Logs
+npm-debug.log*
+pnpm-debug.log*
+pnpm-debug.log*
